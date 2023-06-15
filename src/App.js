@@ -1,11 +1,13 @@
 import Signin from "./view/Signin";
+import { Grid } from "@mui/material";
+import './App.css'
 
 
 function App() {
   return (
-    <div className="App">
+    <Grid className="App">
       <Signin />
-    </div>
+    </Grid>
   );
 }
 
