@@ -32,7 +32,6 @@ const Signin = () => {
         required
         id="outlined-required"
         label="Username"
-        defaultValue=""
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
