@@ -5,6 +5,22 @@ import styles from './Signin.module.css'
 const Signin = () => {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
+  const data = { 
+    username: "test",
+    password: "123456"
+  }
+  const handleValidation = () => {
+    if(!username || !password){
+      alert("field shouldnt be s")
+    }
+    if(username === data.username && password === data.password){
+      console.log('success fv')
+      
+    }else{
+      alert("username or password doesnt match")
+      
+    }
+  }
 
   return (
     <Grid container spacing={2} className={styles.grid}>
@@ -16,7 +32,6 @@ const Signin = () => {
         required
         id="outlined-required"
         label="Username"
-        defaultValue=""
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
@@ -30,7 +45,7 @@ const Signin = () => {
         onChange={(e) => setPassword(e.target.value)}
 
       />
-      <Button variant="contained">SignIn</Button>
+      <Button variant="contained" onClick={handleValidation}>SignIn</Button>
     </Grid>
   )
 }
