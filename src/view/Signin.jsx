@@ -14,7 +14,7 @@ const Signin = () => {
       alert("field shouldnt be empty")
     }
     if(username === data.username && password === data.password){
-      console.log('success')
+      console.log('success fv')
       
     }else{
       alert("username or password doesnt match")
