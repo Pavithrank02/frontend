@@ -11,7 +11,7 @@ const Signin = () => {
   }
   const handleValidation = () => {
     if(!username || !password){
-      alert("field shouldnt be empty")
+      alert("field shouldnt be s")
     }
     if(username === data.username && password === data.password){
       console.log('success fv')
